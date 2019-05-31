@@ -59,7 +59,7 @@ Route::group(['as'=>'admin.', 'prefix'=>'admin', 'namespace'=>'Admin', 'middlewa
 
 
     Route::get('/subscriber','SubscriberController@index')->name('subscriber.index');
-    Route::delete('/subscriber/{subscriber}','SubscriberController@destroy')->name('subscriber.destroy');
+   // Route::delete('/subscriber/{subscriber}','SubscriberController@destroy')->name('subscriber.destroy');
 });
 
 Route::group(['as'=>'author.', 'prefix'=>'author', 'namespace'=>'Author', 'middleware'=>['auth', 'author']],
